@@ -1,0 +1,34 @@
+#N canvas 478 114 504 329 10;
+#X obj 76 145 visualizeXY;
+#X msg 139 175 set;
+#X msg 158 200 addsemi;
+#X obj 128 207 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 149 227 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 76 175 add2 \$1;
+#X obj 121 103 list;
+#X msg 191 220 add2 Tract 0;
+#X text 183 145 Convert tonge coordinate to diameter array;
+#X msg 75 244 \; Tract 0 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.1 1.1 1.1 1.61327
+1.50657 1.39249 1.28105 1.175 1.07696 0.989334 0.914282 0.853652 0.808937
+0.781238 0.771237 0.779182 0.804875 0.847684 0.906556 0.98004 1.06633
+1.16329 1.26855 1.3795 1.49343 1.60751 1.71895 1.825 1.92304 2.01067
+2.05058 2.01708 1.5 1.5 1.5 1.5 1.5;
+#X text 180 174 initialize the message when finish a line.;
+#X floatatom 97 61 5 0 0 0 - - -;
+#X floatatom 158 60 5 0 0 0 - - -;
+#X connect 0 0 5 0;
+#X connect 0 1 1 0;
+#X connect 0 2 9 0;
+#X connect 1 0 9 0;
+#X connect 1 0 3 0;
+#X connect 2 0 9 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 7 0;
+#X connect 5 0 9 0;
+#X connect 6 0 0 1;
+#X connect 7 0 9 0;
+#X connect 11 0 6 0;
+#X connect 12 0 6 1;

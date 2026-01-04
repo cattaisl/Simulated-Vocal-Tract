@@ -1,0 +1,57 @@
+#N canvas 183 62 450 453 10;
+#X msg 112 271 set;
+#X msg 131 296 addsemi;
+#X obj 101 303 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 122 323 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 49 271 add2 \$1;
+#X msg 155 319 add2 Tract 0;
+#X text 147 244 Convert tonge coordinate to diameter array;
+#X msg 48 340 \; Tract 0 0.554287 0.609263 0.641764 0.729153 1.0729
+1.42313 1.71428 1.75434 1.7308 1.88698 2.03582 2.15587 2.3067 2.35821
+2.38086 2.42798 2.44835 2.45075 2.41365 2.30592 2.12837 1.99498 1.79489
+1.5851 1.34151 1.06811 0.862678 0.7461 0.697685 0.625733 0.620769 0.655531
+0.796732 0.934883 1.07471 1.27949 1.42653 1.44617 1.38886 1.47016 1.45617
+1.36657 1.20885;
+#X text 144 273 initialize the message when finish a line.;
+#X obj 49 241 FormantTransfer;
+#X text 80 49 F1;
+#X text 150 50 F2;
+#X obj 129 72 - 500;
+#X obj 60 70 - 200;
+#X obj 60 115 / 88.9;
+#X obj 60 151 - 5;
+#X obj 129 116 / 400;
+#X floatatom 60 179 5 0 0 0 - - -;
+#X floatatom 129 182 5 0 0 0 - - -;
+#X obj 83 210 list;
+#X obj 171 211 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 129 153 - 3;
+#X floatatom 60 32 5 0 0 0 - - -;
+#X floatatom 129 32 5 0 0 0 - - -;
+#X connect 0 0 7 0;
+#X connect 0 0 2 0;
+#X connect 1 0 7 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 7 0;
+#X connect 5 0 7 0;
+#X connect 9 0 4 0;
+#X connect 9 1 0 0;
+#X connect 9 2 7 0;
+#X connect 12 0 16 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 17 0;
+#X connect 16 0 21 0;
+#X connect 17 0 19 0;
+#X connect 18 0 20 0;
+#X connect 18 0 19 1;
+#X connect 19 0 9 1;
+#X connect 20 0 17 0;
+#X connect 21 0 18 0;
+#X connect 22 0 13 0;
+#X connect 23 0 12 0;
