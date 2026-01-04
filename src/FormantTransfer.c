@@ -62,5 +62,6 @@ void FormantTransfer_setup(void) {
 		CLASS_DEFAULT,
 		A_DEFFLOAT, 0);
 	class_addmethod(FormantTransfer_class,
-		(t_method)changeByFormant, gensym("bound"), A_DEFFLOAT, A_DEFFLOAT, 0);
+		(t_method)changeByFormant, gensym("bound"), A_DEFFLOAT, A_DEFFLOAT, 0);
+
 }
