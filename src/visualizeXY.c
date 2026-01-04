@@ -109,5 +109,6 @@ void visualizeXY_setup(void) {
 		CLASS_DEFAULT,
 		A_DEFFLOAT, 0);
 	class_addmethod(visualizeXY_class,
-		(t_method)visual_bound, gensym("bound"),A_DEFFLOAT, A_DEFFLOAT, 0);
+		(t_method)visual_bound, gensym("bound"),A_DEFFLOAT, A_DEFFLOAT, 0);
+
 }
